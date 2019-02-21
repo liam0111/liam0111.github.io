@@ -107,25 +107,25 @@
 
 
 
-  <meta name="description" content="本博客采用 Hexo 3.8.0 搭建，使用了 NexT 6 主题，并使用 Github Pages 部署。在搭建过程中基本按照如下步骤进行：  使用 Github 空间搭建 Hexo 博客 1–安装篇（基于 IntelliJ IDEA）(我选用了 NexT 主题，并没有选用文中的 yelee 主题，所以文中主题的配置部分没有参考，如果和我一样使用 Github Pages 空间，则文中的绑定域名">
-<meta name="keywords" content="Hexo,NexT,Github">
+  <meta name="description" content="Kettle是一款ETL工具，Java编写，可实现有关数据的许多操作，全平台支持，可在Java代码中调用也可使用图形化工具调用。本人在2014年使用过几个月，版本是4.x，所以以下的内容可能并不适用于之后的新版，当个参考吧。只使用过图形化界面的SPOON，并且是部署在Windows Server 2008中，所以代码开发、Linux环境运行等问题并不知晓。  使用总结 在使用”Excel输入”时，">
+<meta name="keywords" content="Kettle">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何搭建一个Hexo博客">
-<meta property="og:url" content="https://liam0111.github.io/hello-hexo.html">
+<meta property="og:title" content="Kettle使用总结与避坑">
+<meta property="og:url" content="https://liam0111.github.io/kettle.html">
 <meta property="og:site_name" content="码界">
-<meta property="og:description" content="本博客采用 Hexo 3.8.0 搭建，使用了 NexT 6 主题，并使用 Github Pages 部署。在搭建过程中基本按照如下步骤进行：  使用 Github 空间搭建 Hexo 博客 1–安装篇（基于 IntelliJ IDEA）(我选用了 NexT 主题，并没有选用文中的 yelee 主题，所以文中主题的配置部分没有参考，如果和我一样使用 Github Pages 空间，则文中的绑定域名">
+<meta property="og:description" content="Kettle是一款ETL工具，Java编写，可实现有关数据的许多操作，全平台支持，可在Java代码中调用也可使用图形化工具调用。本人在2014年使用过几个月，版本是4.x，所以以下的内容可能并不适用于之后的新版，当个参考吧。只使用过图形化界面的SPOON，并且是部署在Windows Server 2008中，所以代码开发、Linux环境运行等问题并不知晓。  使用总结 在使用”Excel输入”时，">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-23T09:46:05.224Z">
+<meta property="og:updated_time" content="2019-02-21T14:29:39.813Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="如何搭建一个Hexo博客">
-<meta name="twitter:description" content="本博客采用 Hexo 3.8.0 搭建，使用了 NexT 6 主题，并使用 Github Pages 部署。在搭建过程中基本按照如下步骤进行：  使用 Github 空间搭建 Hexo 博客 1–安装篇（基于 IntelliJ IDEA）(我选用了 NexT 主题，并没有选用文中的 yelee 主题，所以文中主题的配置部分没有参考，如果和我一样使用 Github Pages 空间，则文中的绑定域名">
+<meta name="twitter:title" content="Kettle使用总结与避坑">
+<meta name="twitter:description" content="Kettle是一款ETL工具，Java编写，可实现有关数据的许多操作，全平台支持，可在Java代码中调用也可使用图形化工具调用。本人在2014年使用过几个月，版本是4.x，所以以下的内容可能并不适用于之后的新版，当个参考吧。只使用过图形化界面的SPOON，并且是部署在Windows Server 2008中，所以代码开发、Linux环境运行等问题并不知晓。  使用总结 在使用”Excel输入”时，">
 
 
 
 
 
 
-  <link rel="canonical" href="https://liam0111.github.io/hello-hexo.html">
+  <link rel="canonical" href="https://liam0111.github.io/kettle.html">
 
 
 
@@ -135,7 +135,7 @@
   };
 </script>
 
-  <title>如何搭建一个Hexo博客 | 码界</title>
+  <title>Kettle使用总结与避坑 | 码界</title>
   
 
 
@@ -310,7 +310,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://liam0111.github.io/hello-hexo.html">
+    <link itemprop="mainEntityOfPage" href="https://liam0111.github.io/kettle.html">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Liam">
@@ -327,7 +327,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">如何搭建一个Hexo博客
+          <h2 class="post-title" itemprop="name headline">Kettle使用总结与避坑
               
             
           </h2>
@@ -352,7 +352,7 @@
                 
               
 
-              <time title="创建时间：2018-11-18 19:58:27" itemprop="dateCreated datePublished" datetime="2018-11-18T19:58:27+08:00">2018-11-18</time>
+              <time title="创建时间：2018-11-23 17:41:27" itemprop="dateCreated datePublished" datetime="2018-11-23T17:41:27+08:00">2018-11-23</time>
             
 
             
@@ -369,7 +369,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-11-23 17:46:05" itemprop="dateModified" datetime="2018-11-23T17:46:05+08:00">2018-11-23</time>
+                <time title="修改时间：2019-02-21 22:29:39" itemprop="dateModified" datetime="2019-02-21T22:29:39+08:00">2019-02-21</time>
               
             
           </span>
@@ -386,7 +386,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a></span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/ETL/" itemprop="url" rel="index"><span itemprop="name">ETL</span></a></span>
 
                 
                 
@@ -401,8 +401,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/hello-hexo.html#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/hello-hexo.html" itemprop="commentCount"></span>
+                <a href="/kettle.html#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/kettle.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -431,7 +431,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">661</span>
+                <span title="本文字数">2k</span>
               
 
               
@@ -445,7 +445,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">1 分钟</span>
+                <span title="阅读时长">2 分钟</span>
               
             </div>
           
@@ -465,19 +465,45 @@
       
 
       
-        <p>本博客采用 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo 3.8.0</a> 搭建，使用了 <a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">NexT 6</a> 主题，并使用 <a href="https://pages.github.com/" target="_blank" rel="noopener">Github Pages</a> 部署。在搭建过程中基本按照如下步骤进行：</p>
-<ol>
-<li><a href="http://www.youmeek.com/hexo-install/" target="_blank" rel="noopener">使用 Github 空间搭建 Hexo 博客 1–安装篇（基于 IntelliJ IDEA）</a>(我选用了 NexT 主题，并没有选用文中的 yelee 主题，所以文中主题的配置部分没有参考，如果和我一样使用 Github Pages 空间，则文中的绑定域名部分也可以不看)</li>
-<li>Hexo 的 _config.yml 配置文件配合 <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">Hexo中文文档</a></li>
-<li>NexT 的 _config.yml 配置文件配合 <a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">NexT官方网站</a></li>
+        <p>Kettle是一款ETL工具，Java编写，可实现有关数据的许多操作，全平台支持，可在Java代码中调用也可使用图形化工具调用。本人在2014年使用过几个月，版本是4.x，所以以下的内容可能并不适用于之后的新版，当个参考吧。只使用过图形化界面的SPOON，并且是部署在Windows Server 2008中，所以代码开发、Linux环境运行等问题并不知晓。</p>
+<hr>
+<h1 id="使用总结"><a href="#使用总结" class="headerlink" title="使用总结"></a>使用总结</h1><ul>
+<li>在使用”Excel输入”时，Kettle会读取到表格有数据的最后一行，哪怕选择的字段不是最长的列，也会读到最长的列的最后一行，所以在输入时，如果选择的字段不是最长的列，会读取出一些&lt;null&gt;，解决办法是将需要输入的数据单独存在一个表格中，读取这个表格，避免其他列干扰。</li>
+<li>数据库连接最好使用JNDI方式，SQL中的变量最好使用配置kettle.properties方式，第一次建立文件时，一定想清楚有哪些字段会变，设置为变量，省去后续再改的麻烦。</li>
+<li>在”表输入”等地方写SQL语句时，一定加上别名，否则在诸如”表输出”的地方有字段选择时，修改了SQL的字段名，这些地方就得跟着改，加上别名后就避免了这个情况。</li>
+<li>替换SQL中的字符或字符串可以使用MySQL自带的replace函数也可以使用“字符串替换”这个工具。</li>
+<li>如果有选择、插入、更新、删除需要多表联合查询时，需使用脚本中的”执行SQL脚本”工具，在此工具中，可以获取前边步骤的输出字段当做变量，在语句中使用?代替变量，字符串型变量需要将问号加上单引号即’?’，也可以不加转而使用执行SQL脚本中的Quote Strings选择框代替，此功能的好处是可以避免数据中的特殊字符，而执行每一行选择框的意思是前边步骤有输出数据，输出一行此语句就执行一行，如果前边步骤没有输出，就不会执行语句。</li>
+<li>Kettle设置数据库的几种方式：<ol>
+<li>在转换中设置DB连接；</li>
+<li>在kettle.properties中设置变量，然后在转换中设置DB连接，使用变量，此方法不能将密码设置成变量；</li>
+<li>配置JNDI，在DB连接中使用JNDI方式。配置JNDI需要在安装目录\data-integration\simple-jndi\jdbc.properties中加入jdbc的连接信息，比如下面这个示例：<br> <pre><code><br> ############ MYSQL ############<br> MYSQL/type=javax.sql.DataSource<br> MYSQL/driver=com.mysql.jdbc.Driver<br> MYSQL/url=jdbc:mysql://10.0.0.1:3309/testdb<br> MYSQL/user=test<br> MYSQL/password=test<br> </code></pre></li>
 </ol>
-<p><strong>还是强烈建议通过从头到尾看一遍 Hexo 和 NexT 的配置文件并配合其各自官方文档来配置博客，虽然要花不少时间但能把所有配置都熟悉一下。不过由于官方文档可能更新不及时，有的内容比较旧，所以最好配合你所使用的版本的其他用户的配置心得来看，搜索引擎大把。</strong></p>
-<p>当然，如果你想很快搭建一个可用的博客，日后再慢慢配置的话，也可以参考步骤1和下面的步骤4。</p>
-<ol start="4">
-<li><a href="https://www.jianshu.com/p/68bbffd06481" target="_blank" rel="noopener">[实战干货]30分钟快速搭建hexo3.7.0 + next主题6.4教程(持续更新)</a></li>
+</li>
+<li>关于使用Kettle从MySQL取时间数据写入Oracle的问题解决：<ul>
+<li>前提：MySQL为int型Unix时间戳，Oracle为DATE型时间</li>
+<li>问题：使用Kettle表输入功能从MySQL读取时间使用FROM_UNIXTIME将时间戳转为YYYY-MM-DD HH24:MI:SS格式后通过表输出功能写入Oracle，提示ORA-01861: 文字与格式字符串不匹配。</li>
+<li>问题分析：<ol>
+<li>Oracle的默认日期格式并不是YYYY-MM-DD HH24:MI:SS         </li>
+<li>FROM_UNIXTIME的结果是字符串，并不是DATE型</li>
 </ol>
-<p>另外，像取消打赏文字旋转动画这种在配置文件中无法配置，需要修改其他文件的操作就需要自行搜索一下了，使用关键字”Hexo+你想实现的功能”基本都能搜索到。</p>
-<p>最后，由于 Hexo 博客的博文需要使用 Markdown 语言编辑，再附一篇 Markdown 入门，<a href="http://www.markdown.cn/" target="_blank" rel="noopener">www.markdown.cn</a>，首页的知识点很全，多写就熟了。</p>
+</li>
+<li>解决办法：<ol>
+<li>更改Oracle的参数文件中的NLS_DATE_FORMAT为YYYY-MM-DD HH24:MI:SS</li>
+<li>将FROM_UNIXTIME的结果用STR_TO_DATE转为DATE型</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>#避坑</p>
+<p>在数据迁移时遇到一些坑，记录一下。</p>
+<ul>
+<li>若遇到MySQL中VARCHAR或LONGTEXT类型的字段，需确认有无转义符”\“，因为有可能\“会被转义为”而被当成SQL语句外引号的末尾引号，\;会被转义为;当成SQL语句的结束，如果有，有两种解决办法：1.跳过这条数据，之后直接复制粘贴进去；2.将数据的转义符替换为特殊字符，写入完毕再将转义符替换回来。</li>
+<li>若遇到MySQL中VARCHAR或LONGTEXT类型的字段，需确认有无特殊中文字符，有一些看起来像中文的字符在UTF8的编码下无法显示，所以无法写入，遇到这种情况，有几种解决办法：1.跳过这条数据，之后直接复制粘贴进去；2.在INSERT执行前先执行set names ‘utf8mb4’ (gbk好像也有效)，此语句用来改变临时会话时客户端(即SQL语句)与服务器端的字符集编码格式，在连接断开后无效，遇到乱码INSERT不了的时候同样有效。</li>
+<li>遇到MySQL的ENUM即枚举类型时，需确认所有存储数据是否都符合枚举类型值，有可能出现枚举值之外的值，此时需要转换。</li>
+<li>遇到MySQL的数字值时，在Java中最好使用Integer、Double等可以赋NULL值的数据类型，在Kettle中需要使用替换NULL值的工具。</li>
+</ul>
 
       
     </div>
@@ -527,11 +553,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
-          
-            <a href="/tags/NexT/" rel="tag"># NexT</a>
-          
-            <a href="/tags/Github/" rel="tag"># Github</a>
+            <a href="/tags/Kettle/" rel="tag"># Kettle</a>
           
         </div>
       
@@ -544,15 +566,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/Java-custom-annotation.html" rel="next" title="Java中的自定义注解与使用">
+                <i class="fa fa-chevron-left"></i> Java中的自定义注解与使用
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/Java-custom-annotation.html" rel="prev" title="Java中的自定义注解与使用">
-                Java中的自定义注解与使用 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -600,8 +622,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -711,6 +742,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#使用总结"><span class="nav-number">1.</span> <span class="nav-text">使用总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
