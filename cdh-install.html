@@ -107,18 +107,18 @@
 
 
 
-  <meta name="description" content="Linux系统为CentOS 6，CDH版本为5.6.0。  http://archive.cloudera.com/cm5/redhat/6/x86_64/cm/5.6.0/RPMS/x86_64/下载jdk以及文件名包含el6的文件(el6表示centOS内核版本是6)，这些都是Cloudera Manager，5.6.0版本可以修改 http://archive-primary.cloude">
+  <meta name="description" content="Linux系统为CentOS 6，CDH版本为5.6.0。  http://archive.cloudera.com/cm5/redhat/6/x86_64/cm/5.6.0/RPMS/x86_64/ 下载jdk以及文件名包含el6的文件(el6表示centOS内核版本是6)，这些都是Cloudera Manager，5.6.0版本可以修改 http://archive-primary.cloud">
 <meta name="keywords" content="Hadoop,CDH,Cloudera">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Cloudera Hadoop(CDH)安装步骤">
 <meta property="og:url" content="https://liam0111.github.io/cdh-install.html">
 <meta property="og:site_name" content="码界">
-<meta property="og:description" content="Linux系统为CentOS 6，CDH版本为5.6.0。  http://archive.cloudera.com/cm5/redhat/6/x86_64/cm/5.6.0/RPMS/x86_64/下载jdk以及文件名包含el6的文件(el6表示centOS内核版本是6)，这些都是Cloudera Manager，5.6.0版本可以修改 http://archive-primary.cloude">
+<meta property="og:description" content="Linux系统为CentOS 6，CDH版本为5.6.0。  http://archive.cloudera.com/cm5/redhat/6/x86_64/cm/5.6.0/RPMS/x86_64/ 下载jdk以及文件名包含el6的文件(el6表示centOS内核版本是6)，这些都是Cloudera Manager，5.6.0版本可以修改 http://archive-primary.cloud">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-04T10:14:25.278Z">
+<meta property="og:updated_time" content="2019-03-04T10:21:23.294Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Cloudera Hadoop(CDH)安装步骤">
-<meta name="twitter:description" content="Linux系统为CentOS 6，CDH版本为5.6.0。  http://archive.cloudera.com/cm5/redhat/6/x86_64/cm/5.6.0/RPMS/x86_64/下载jdk以及文件名包含el6的文件(el6表示centOS内核版本是6)，这些都是Cloudera Manager，5.6.0版本可以修改 http://archive-primary.cloude">
+<meta name="twitter:description" content="Linux系统为CentOS 6，CDH版本为5.6.0。  http://archive.cloudera.com/cm5/redhat/6/x86_64/cm/5.6.0/RPMS/x86_64/ 下载jdk以及文件名包含el6的文件(el6表示centOS内核版本是6)，这些都是Cloudera Manager，5.6.0版本可以修改 http://archive-primary.cloud">
 
 
 
@@ -352,7 +352,7 @@
                 
               
 
-              <time title="创建时间：2019-03-04 16:33:43 / 修改时间：18:14:25" itemprop="dateCreated datePublished" datetime="2019-03-04T16:33:43+08:00">2019-03-04</time>
+              <time title="创建时间：2019-03-04 16:33:43 / 修改时间：18:21:23" itemprop="dateCreated datePublished" datetime="2019-03-04T16:33:43+08:00">2019-03-04</time>
             
 
             
@@ -455,8 +455,8 @@
       
         <p>Linux系统为CentOS 6，CDH版本为5.6.0。</p>
 <ol>
-<li><code>http://archive.cloudera.com/cm5/redhat/6/x86_64/cm/5.6.0/RPMS/x86_64/</code>下载jdk以及文件名包含el6的文件(el6表示centOS内核版本是6)，这些都是Cloudera Manager，5.6.0版本可以修改</li>
-<li><code>http://archive-primary.cloudera.com/cdh5/parcels/5.6.0/</code>下载Cloudera Hadoop组件，文件名包含el6的两个文件(要与Cloudera Manager文件的内核相同)以及manifest.json</li>
+<li><a href="http://archive.cloudera.com/cm5/redhat/6/x86_64/cm/5.6.0/RPMS/x86_64/" target="_blank" rel="noopener">http://archive.cloudera.com/cm5/redhat/6/x86_64/cm/5.6.0/RPMS/x86_64/</a> 下载jdk以及文件名包含el6的文件(el6表示centOS内核版本是6)，这些都是Cloudera Manager，5.6.0版本可以修改</li>
+<li><a href="http://archive-primary.cloudera.com/cdh5/parcels/5.6.0/" target="_blank" rel="noopener">http://archive-primary.cloudera.com/cdh5/parcels/5.6.0/</a> 下载Cloudera Hadoop组件，文件名包含el6的两个文件(要与Cloudera Manager文件的内核相同)以及manifest.json</li>
 <li>安装大概步骤：操作系统环境配置→安装jdk、mysql、httpd→安装CDH&amp;CM</li>
 <li><code>vi /etc/hosts</code>维护所有集群的IP和别名，scp拷贝在所有机器上</li>
 <li>关闭防火墙，先<code>service iptables status</code>查看防火墙状态，再<code>service iptables stop</code>关闭，再<code>service iptables status</code>查看防火墙是否重启也不会启动，再<code>chkconfig iptables off</code></li>
@@ -481,14 +481,14 @@ gpgcheck=false
 </li>
 <li><code>yum -y install httpd</code>安装httpd，httpd必须和CM安装在一台机器上，启动httpd，<code>service httpd start</code></li>
 <li>因为要做yum资源的打包，创建yum资源库文件，所以安装createrepo，<code>yum install -y createrepo</code></li>
-<li>把CDH和CM的安装文件放到/var/www/html下并使用createrepo打包，<code>createrepo .</code>将当前目录下文件打包，访问<code>http://bigdata1/cm/</code>，看看行不行</li>
+<li>把CDH和CM的安装文件放到/var/www/html下并使用createrepo打包，<code>createrepo .</code>将当前目录下文件打包，访问 <a href="http://bigdata1/cm/" target="_blank" rel="noopener">http://bigdata1/cm/</a> ，看看行不行</li>
 <li>安装jdk，<code>rpm -qa|grep java</code> <code>rpm -e --nodeps xxx</code>删掉现有jdk，<code>rpm -ivh xxx</code>安装jdk，配置环境变量<code>vi /etc/profile</code>最后加一行<code>export PATH=&quot;/usr/java/jdk1.7.0_80/bin:$PATH&quot;</code>，再<code>source /etc/profile</code>，再<code>java -version</code>看jdk是否安装成功，每台机器都要装</li>
 <li>下载MySQL(el6的)，安装MySQL，一台装即可，一般来说hive和MySQL不要装一台上，<code>tar -xvf mysql-xxxxx.tar</code>解包，<code>rpm -qa|grep mysql</code>看是否存在MySQL，存在就<code>rpm -e --nodeps xxxx</code>删掉，以MySQL5.5为例，先安装server再安装client再安装shared compact，然后设置开机启动<code>chkconfig mysql on</code>，然后开启服务<code>service mysql start</code></li>
 <li>配置MySQL，<code>mysql_secure_installation</code>，设置root密码，移除匿名用户，允许远程登录，移除测试库，重加载权限表，配置完成</li>
 <li>为Hive做准备，<code>mysql -u root --password=&#39;123456&#39; -e &#39;create database metastore default character set utf8;&#39;</code>建立metastore数据库，<code>mysql -u root -p</code>进入MySQL，<code>show databases;</code>查看刚刚建立的metastore数据库，创建hive用户，<code>mysql -u root -- password=&#39;123456&#39; -e &quot;create USER &#39;hive&#39;@&#39;%&#39; identified by &#39;hive&#39;; grant all privileges on metastore.* to &#39;hive&#39;@&#39;%&#39;;flush privileges;&quot;</code>，@’%’表示在任意IP可用，此用户在metastore拥有所有权限，如果已经进入MySQL了，那么直接输入SQL语句即可，这种方式是不进入MySQL直接执行SQL，再创建cm数据库和cm用户，用于控制cloudera manager，<code>mysql -u root --password=&#39;123456&#39; -e &quot;create database cm default character set utf8; create USER &#39;cm&#39;@&#39;%&#39; identified by &#39;cm&#39;; grant all privileges on cm.* to &#39;cm&#39;@&#39;%&#39;; flush privileges;&quot;</code></li>
 <li>将MySQL的jdbc包移到/usr/share/java，为hive连接做准备</li>
-<li>安装cm，进入cm安装包的目录/var/www/html/cm，<code>yum install -y cloudera-manager-daemons-5.6.0-1.cm560.p0.54.el6.x86_64.rpm</code>，-y的意思是如果安装过程中有需要输入y的情况会自动输入，<code>yum install -y cloudera-manager-server-5.6.0-1.cm560.p0.54.el6.x86_64.rpm</code>，<code>cd /usr/share/cmf/schema</code>，输入<code>./scm_prepare_database.sh -h bigdata1 mysql cm cm cm</code>，-h指定hosts，然后<code>service cloudera-scm-server status</code>查看cm是否启动，如果没有启动，<code>service cloudera-scm-server start</code>启动，启动后，等待几分钟，用浏览器访问<a href="http://bigdata1:7180/或IP地址访问，" target="_blank" rel="noopener">http://bigdata1:7180/或IP地址访问，</a>﻿进入CM登陆页即CM安装成功</li>
-<li>进入cm页面，admin/admin登陆，yes，继续，选择免费版，继续，继续，为集群指定主机，所有机器都要输入，继续，使用Parcel，点击更多选项，删掉所有远程Parcel存储库URL，添加<a href="http://bigdata1/cdh/，更改cdh有个以sha1结尾的文件的文件名，去掉1，页面点确定，选择CDH版本，会自动认出，选择特定发行版，自定义存储库，输入http://bigdata1/cm/，继续，不安装JDK，继续，不启用单用户模式，继续，填写SSH信息，继续，安装集群(如果脚本执行失败hostname变为bagon需要将Linux的DNS改为8.8.8.8)，继续，安装Parcel，继续，检查主机，有叹号无所谓，完成，选择安装的服务，自定义服务，选择HDFS、YARN、Hive，继续，自定义角色分配，HDFS，如果多台机器，NameNode和DataNode选择不同机器，SecondaryNameNode和NameNode选择不同机器，Hive，去掉Gateway，Hive" target="_blank" rel="noopener">http://bigdata1/cdh/，更改cdh有个以sha1结尾的文件的文件名，去掉1，页面点确定，选择CDH版本，会自动认出，选择特定发行版，自定义存储库，输入http://bigdata1/cm/，继续，不安装JDK，继续，不启用单用户模式，继续，填写SSH信息，继续，安装集群(如果脚本执行失败hostname变为bagon需要将Linux的DNS改为8.8.8.8)，继续，安装Parcel，继续，检查主机，有叹号无所谓，完成，选择安装的服务，自定义服务，选择HDFS、YARN、Hive，继续，自定义角色分配，HDFS，如果多台机器，NameNode和DataNode选择不同机器，SecondaryNameNode和NameNode选择不同机器，Hive，去掉Gateway，Hive</a> Metastore Server选择MySQL安装的那台机器，HiveServer2选择其他机器，YARN，NodeManager应放在DataNode机器上，继续，数据库设置，数据库类型MySQL，数据库名称metastore，用户名hive，密码hive，测试连接(测试jdbc包)，继续，审核更改，DataNode数据目录可以设置多个，好处是一个目录满了可以继续用第二个目录，防止溢出，不过DN本身已经存了三份，不用再做RAID，NameNode数据目录，最好做RAID，一个本地目录，一个远程目录，这样本地挂了还有一个，继续，首次运行，等待安装，如果出现timeout错误就重试</li>
+<li>安装cm，进入cm安装包的目录/var/www/html/cm，<code>yum install -y cloudera-manager-daemons-5.6.0-1.cm560.p0.54.el6.x86_64.rpm</code>，-y的意思是如果安装过程中有需要输入y的情况会自动输入，<code>yum install -y cloudera-manager-server-5.6.0-1.cm560.p0.54.el6.x86_64.rpm</code>，<code>cd /usr/share/cmf/schema</code>，输入<code>./scm_prepare_database.sh -h bigdata1 mysql cm cm cm</code>，-h指定hosts，然后<code>service cloudera-scm-server status</code>查看cm是否启动，如果没有启动，<code>service cloudera-scm-server start</code>启动，启动后，等待几分钟，用浏览器访问 <a href="http://bigdata1:7180/" target="_blank" rel="noopener">http://bigdata1:7180/</a> 或IP地址访问，﻿进入CM登陆页即CM安装成功</li>
+<li>进入cm页面，admin/admin登陆，yes，继续，选择免费版，继续，继续，为集群指定主机，所有机器都要输入，继续，使用Parcel，点击更多选项，删掉所有远程Parcel存储库URL，添加 <a href="http://bigdata1/cdh/" target="_blank" rel="noopener">http://bigdata1/cdh/</a> ，更改cdh有个以sha1结尾的文件的文件名，去掉1，页面点确定，选择CDH版本，会自动认出，选择特定发行版，自定义存储库，输入 <a href="http://bigdata1/cm/" target="_blank" rel="noopener">http://bigdata1/cm/</a> ，继续，不安装JDK，继续，不启用单用户模式，继续，填写SSH信息，继续，安装集群(如果脚本执行失败hostname变为bagon需要将Linux的DNS改为8.8.8.8)，继续，安装Parcel，继续，检查主机，有叹号无所谓，完成，选择安装的服务，自定义服务，选择HDFS、YARN、Hive，继续，自定义角色分配，HDFS，如果多台机器，NameNode和DataNode选择不同机器，SecondaryNameNode和NameNode选择不同机器，Hive，去掉Gateway，Hive Metastore Server选择MySQL安装的那台机器，HiveServer2选择其他机器，YARN，NodeManager应放在DataNode机器上，继续，数据库设置，数据库类型MySQL，数据库名称metastore，用户名hive，密码hive，测试连接(测试jdbc包)，继续，审核更改，DataNode数据目录可以设置多个，好处是一个目录满了可以继续用第二个目录，防止溢出，不过DN本身已经存了三份，不用再做RAID，NameNode数据目录，最好做RAID，一个本地目录，一个远程目录，这样本地挂了还有一个，继续，首次运行，等待安装，如果出现timeout错误就重试</li>
 <li>多机器安装建议：namenode、resourcemanager、mysql、hive metastore在一台机器，secondnamenode、datanode、nodemanager、hive在一台机器，前者组raid，后者不用组</li>
 <li>安装完成进入主页，若资源占用过高，可以停止监控，点击左侧Cloudera Management Service的下箭头，选择停止，停止后删除</li>
 <li>分别进入HDFS、Hive、YARN页面，点击实例，查看启动情况</li>
