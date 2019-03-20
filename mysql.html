@@ -107,24 +107,25 @@
 
 
 
-  <meta name="description" content="一个Java程序员的博客，分享一些技术知识。">
-<meta name="keywords" content="java,spring,sql">
-<meta property="og:type" content="website">
-<meta property="og:title" content="码界">
-<meta property="og:url" content="https://liam0111.github.io/tags/Kettle/index.html">
+  <meta name="description" content="之前在工作中使用了一年MySQL5.5，总结了几点心得。  在查询条件中用&amp;gt;=替代&amp;gt;，因为&amp;gt;=4和&amp;gt;3，&amp;gt;3可能会读出一些3和4之间的值。 避免在索引列上进行计算，否则将不走索引。 联合索引就像联系人的姓、名，要确定好哪个字段在前哪个字段在后，只有在条件中使用了第一个字段才会激活联合索引，如果后续字段不使用将查找全部索引，除第一个字段外，使用了哪个字段就按照该条件查找">
+<meta name="keywords" content="MySQL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySQL使用总结">
+<meta property="og:url" content="https://liam0111.github.io/mysql.html">
 <meta property="og:site_name" content="码界">
-<meta property="og:description" content="一个Java程序员的博客，分享一些技术知识。">
+<meta property="og:description" content="之前在工作中使用了一年MySQL5.5，总结了几点心得。  在查询条件中用&amp;gt;=替代&amp;gt;，因为&amp;gt;=4和&amp;gt;3，&amp;gt;3可能会读出一些3和4之间的值。 避免在索引列上进行计算，否则将不走索引。 联合索引就像联系人的姓、名，要确定好哪个字段在前哪个字段在后，只有在条件中使用了第一个字段才会激活联合索引，如果后续字段不使用将查找全部索引，除第一个字段外，使用了哪个字段就按照该条件查找">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-03-20T09:28:02.849Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="码界">
-<meta name="twitter:description" content="一个Java程序员的博客，分享一些技术知识。">
+<meta name="twitter:title" content="MySQL使用总结">
+<meta name="twitter:description" content="之前在工作中使用了一年MySQL5.5，总结了几点心得。  在查询条件中用&amp;gt;=替代&amp;gt;，因为&amp;gt;=4和&amp;gt;3，&amp;gt;3可能会读出一些3和4之间的值。 避免在索引列上进行计算，否则将不走索引。 联合索引就像联系人的姓、名，要确定好哪个字段在前哪个字段在后，只有在条件中使用了第一个字段才会激活联合索引，如果后续字段不使用将查找全部索引，除第一个字段外，使用了哪个字段就按照该条件查找">
 
 
 
 
 
 
-  <link rel="canonical" href="https://liam0111.github.io/tags/Kettle/">
+  <link rel="canonical" href="https://liam0111.github.io/mysql.html">
 
 
 
@@ -134,7 +135,7 @@
   };
 </script>
 
-  <title>标签: Kettle | 码界</title>
+  <title>MySQL使用总结 | 码界</title>
   
 
 
@@ -183,7 +184,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -240,7 +241,7 @@
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
   </li>
@@ -289,82 +290,285 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h2>Kettle<small>标签</small>
-        </h2>
-      </div>
+  
 
-      
-        
+  
+  
+  
+
+  
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://liam0111.github.io/mysql.html">
 
-      <h3 class="post-title">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Liam">
+      <meta itemprop="description" content="一个Java程序员的博客，分享一些技术知识。">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="码界">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/kettle.html" itemprop="url">
-              
-                <span itemprop="name">Kettle使用总结与避坑</span>
-              
-            </a>
         
-      </h3>
+          <h2 class="post-title" itemprop="name headline">MySQL使用总结
+              
+            
+          </h2>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-21T20:32:54+08:00" content="2019-02-21">
-          02-21
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
 
-    </header>
-  </article>
+            
+            
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-20 17:14:37 / 修改时间：17:28:02" itemprop="dateCreated datePublished" datetime="2019-03-20T17:14:37+08:00">2019-03-20</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/SQL/" itemprop="url" rel="index"><span itemprop="name">SQL</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/mysql.html#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/mysql.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">546</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">1 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>之前在工作中使用了一年MySQL5.5，总结了几点心得。</p>
+<ul>
+<li>在查询条件中用&gt;=替代&gt;，因为&gt;=4和&gt;3，&gt;3可能会读出一些3和4之间的值。</li>
+<li>避免在索引列上进行计算，否则将不走索引。</li>
+<li>联合索引就像联系人的姓、名，要确定好哪个字段在前哪个字段在后，只有在条件中使用了第一个字段才会激活联合索引，如果后续字段不使用将查找全部索引，除第一个字段外，使用了哪个字段就按照该条件查找索引。比如一个联合索引PK(姓，名)，WHERE 姓=’王’时，会激活索引并查询姓为王名为所有的记录。</li>
+<li>order by使用索引的两个条件：①所有列都包含在相同索引中并且顺序也相同；②所有列都非空。</li>
+<li>子查询表大用exists，表小用in，无论子查询表大表小，全用not exists。</li>
+<li><p>优化原则：小表驱动大表，即小的数据集驱动大的数据集。</p>
+<pre><code>//当B表的数据集小于A表的数据集时，用in优于exists
+select * from A where id in (select id from B)
+//当A表的数据集小于B表的数据集时，用exists优于in
+select * from A where exists (select * from B where B.id = A.id)
+</code></pre></li>
+</ul>
 
       
     </div>
 
+    
+
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Liam 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Liam 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/MySQL/" rel="tag"># MySQL</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/cdh-install.html" rel="next" title="Cloudera Hadoop(CDH)安装步骤">
+                <i class="fa fa-chevron-left"></i> Cloudera Hadoop(CDH)安装步骤
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/postgresql.html" rel="prev" title="PostgreSQL使用总结">
+                PostgreSQL使用总结 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -655,6 +859,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.5.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.5.0"></script>
+
+
 
   
 

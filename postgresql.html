@@ -107,24 +107,25 @@
 
 
 
-  <meta name="description" content="一个Java程序员的博客，分享一些技术知识。">
-<meta name="keywords" content="java,spring,sql">
-<meta property="og:type" content="website">
-<meta property="og:title" content="码界">
-<meta property="og:url" content="https://liam0111.github.io/tags/Kettle/index.html">
+  <meta name="description" content="之前在工作中使用了一年半PostgreSQL9.5，总结一下。  递归查询：开发中碰到了递归查询的场景，网上搜了一下，觉得挺有意思，以下这个示例非原创，版权归原作者所有。   开发有需求，说需要对一张地区表进行递归查询，Postgres中有个with recursive的查询方式，可以满足递归查询(一般&amp;gt;=2层)。 测试如下： create table tb(id varchar(3) ,">
+<meta name="keywords" content="PostgreSQL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PostgreSQL使用总结">
+<meta property="og:url" content="https://liam0111.github.io/postgresql.html">
 <meta property="og:site_name" content="码界">
-<meta property="og:description" content="一个Java程序员的博客，分享一些技术知识。">
+<meta property="og:description" content="之前在工作中使用了一年半PostgreSQL9.5，总结一下。  递归查询：开发中碰到了递归查询的场景，网上搜了一下，觉得挺有意思，以下这个示例非原创，版权归原作者所有。   开发有需求，说需要对一张地区表进行递归查询，Postgres中有个with recursive的查询方式，可以满足递归查询(一般&amp;gt;=2层)。 测试如下： create table tb(id varchar(3) ,">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-03-20T09:36:21.558Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="码界">
-<meta name="twitter:description" content="一个Java程序员的博客，分享一些技术知识。">
+<meta name="twitter:title" content="PostgreSQL使用总结">
+<meta name="twitter:description" content="之前在工作中使用了一年半PostgreSQL9.5，总结一下。  递归查询：开发中碰到了递归查询的场景，网上搜了一下，觉得挺有意思，以下这个示例非原创，版权归原作者所有。   开发有需求，说需要对一张地区表进行递归查询，Postgres中有个with recursive的查询方式，可以满足递归查询(一般&amp;gt;=2层)。 测试如下： create table tb(id varchar(3) ,">
 
 
 
 
 
 
-  <link rel="canonical" href="https://liam0111.github.io/tags/Kettle/">
+  <link rel="canonical" href="https://liam0111.github.io/postgresql.html">
 
 
 
@@ -134,7 +135,7 @@
   };
 </script>
 
-  <title>标签: Kettle | 码界</title>
+  <title>PostgreSQL使用总结 | 码界</title>
   
 
 
@@ -183,7 +184,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -240,7 +241,7 @@
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
   </li>
@@ -289,82 +290,307 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h2>Kettle<small>标签</small>
-        </h2>
-      </div>
+  
 
-      
-        
+  
+  
+  
+
+  
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://liam0111.github.io/postgresql.html">
 
-      <h3 class="post-title">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Liam">
+      <meta itemprop="description" content="一个Java程序员的博客，分享一些技术知识。">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="码界">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/kettle.html" itemprop="url">
-              
-                <span itemprop="name">Kettle使用总结与避坑</span>
-              
-            </a>
         
-      </h3>
+          <h2 class="post-title" itemprop="name headline">PostgreSQL使用总结
+              
+            
+          </h2>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-21T20:32:54+08:00" content="2019-02-21">
-          02-21
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
 
-    </header>
-  </article>
+            
+            
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-20 17:28:27 / 修改时间：17:36:21" itemprop="dateCreated datePublished" datetime="2019-03-20T17:28:27+08:00">2019-03-20</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/SQL/" itemprop="url" rel="index"><span itemprop="name">SQL</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/postgresql.html#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/postgresql.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">1.2k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">1 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>之前在工作中使用了一年半PostgreSQL9.5，总结一下。</p>
+<ul>
+<li><p>递归查询：开发中碰到了递归查询的场景，网上搜了一下，觉得挺有意思，以下这个示例非原创，版权归原作者所有。</p>
+<p>  开发有需求，说需要对一张地区表进行递归查询，Postgres中有个with recursive的查询方式，可以满足递归查询(一般&gt;=2层)。 测试如下：</p>
+<pre><code>create table tb(id varchar(3) , pid varchar(3) , name varchar(10));
+insert into tb values(&apos;002&apos;, 0, &apos;浙江省&apos;);
+insert into tb values(&apos;001&apos;, 0, &apos;广东省&apos;);
+insert into tb values(&apos;003&apos;, &apos;002&apos;, &apos;衢州市&apos;);
+insert into tb values(&apos;004&apos;, &apos;002&apos;, &apos;杭州市&apos;) ;
+...﻿​
+</code></pre><p>  测试语句,查询浙江省及以下县市：</p>
+<pre><code>with RECURSIVE cte as
+(
+ select a.id,a.name,a.pid from tb a where id=&apos;002&apos;
+ union all
+ select k.id,k.name,k.pid from tb k inner join cte c on c.id = k.pid
+)
+select id,name from cte;
+ id | name
+----+--------
+002 | 浙江省
+003 | 衢州市
+004 | 杭州市
+...
+</code></pre><p>  如果查询有报错如死循环跳出，则需要检查下父字段与子字段的数据是否有相同。如果想按层次分别显示出来，也可以这么写：</p>
+<pre><code>with RECURSIVE cte as
+(
+ select a.id,cast(a.name as varchar(100)) from tb a where id=&apos;002&apos;
+ union all
+ select k.id,cast(c.name||&apos;&gt;&apos;||k.name as varchar(100)) as name from tb k inner join cte c on c.id = k.pid
+)
+select id,name from cte;
+ id | name
+----+----------------------
+002 | 浙江省
+003 | 浙江省&gt;衢州市
+004 | 浙江省&gt;杭州市
+...
+</code></pre></li>
+</ul>
 
       
     </div>
 
+    
+
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Liam 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Liam 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/PostgreSQL/" rel="tag"># PostgreSQL</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/mysql.html" rel="next" title="MySQL使用总结">
+                <i class="fa fa-chevron-left"></i> MySQL使用总结
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -655,6 +881,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.5.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.5.0"></script>
+
+
 
   
 
