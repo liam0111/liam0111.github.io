@@ -107,18 +107,18 @@
 
 
 
-  <meta name="description" content="Kettle是一款ETL工具，Java编写，可实现有关数据的许多操作，全平台支持，可在Java代码中调用也可使用图形化工具调用。本人在2014年使用过几个月，版本是4.x，所以以下的内容可能并不适用于之后的新版，当个参考吧。只使用过图形化界面的SPOON，并且是部署在Windows Server 2008中，所以代码开发、Linux环境运行等问题并不知晓。  使用总结 在使用”Excel输入”时，">
+  <meta name="description" content="Kettle是一款ETL工具，Java编写，可实现有关数据的许多操作，全平台支持，可在Java代码中调用也可使用图形化工具调用。2014年使用过几个月，版本是4.x，可能与现在版本差别挺大。只使用过图形化界面的SPOON，并且是部署在Windows Server 2008中。  使用总结 在使用”Excel输入”时，Kettle会读取到表格有数据的最后一行，哪怕选择的字段不是最长的列，也会读到最长">
 <meta name="keywords" content="Kettle">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Kettle使用总结与避坑">
 <meta property="og:url" content="https://liam0111.github.io/kettle.html">
 <meta property="og:site_name" content="码界">
-<meta property="og:description" content="Kettle是一款ETL工具，Java编写，可实现有关数据的许多操作，全平台支持，可在Java代码中调用也可使用图形化工具调用。本人在2014年使用过几个月，版本是4.x，所以以下的内容可能并不适用于之后的新版，当个参考吧。只使用过图形化界面的SPOON，并且是部署在Windows Server 2008中，所以代码开发、Linux环境运行等问题并不知晓。  使用总结 在使用”Excel输入”时，">
+<meta property="og:description" content="Kettle是一款ETL工具，Java编写，可实现有关数据的许多操作，全平台支持，可在Java代码中调用也可使用图形化工具调用。2014年使用过几个月，版本是4.x，可能与现在版本差别挺大。只使用过图形化界面的SPOON，并且是部署在Windows Server 2008中。  使用总结 在使用”Excel输入”时，Kettle会读取到表格有数据的最后一行，哪怕选择的字段不是最长的列，也会读到最长">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-02-21T14:38:58.094Z">
+<meta property="og:updated_time" content="2019-12-29T01:16:14.803Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Kettle使用总结与避坑">
-<meta name="twitter:description" content="Kettle是一款ETL工具，Java编写，可实现有关数据的许多操作，全平台支持，可在Java代码中调用也可使用图形化工具调用。本人在2014年使用过几个月，版本是4.x，所以以下的内容可能并不适用于之后的新版，当个参考吧。只使用过图形化界面的SPOON，并且是部署在Windows Server 2008中，所以代码开发、Linux环境运行等问题并不知晓。  使用总结 在使用”Excel输入”时，">
+<meta name="twitter:description" content="Kettle是一款ETL工具，Java编写，可实现有关数据的许多操作，全平台支持，可在Java代码中调用也可使用图形化工具调用。2014年使用过几个月，版本是4.x，可能与现在版本差别挺大。只使用过图形化界面的SPOON，并且是部署在Windows Server 2008中。  使用总结 在使用”Excel输入”时，Kettle会读取到表格有数据的最后一行，哪怕选择的字段不是最长的列，也会读到最长">
 
 
 
@@ -352,12 +352,24 @@
                 
               
 
-              <time title="创建时间：2019-02-21 20:32:54 / 修改时间：22:38:58" itemprop="dateCreated datePublished" datetime="2019-02-21T20:32:54+08:00">2019-02-21</time>
+              <time title="创建时间：2019-02-21 20:32:54" itemprop="dateCreated datePublished" datetime="2019-02-21T20:32:54+08:00">2019-02-21</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-12-29 09:16:14" itemprop="dateModified" datetime="2019-12-29T09:16:14+08:00">2019-12-29</time>
               
             
           </span>
@@ -453,7 +465,7 @@
       
 
       
-        <p>Kettle是一款ETL工具，Java编写，可实现有关数据的许多操作，全平台支持，可在Java代码中调用也可使用图形化工具调用。本人在2014年使用过几个月，版本是4.x，所以以下的内容可能并不适用于之后的新版，当个参考吧。只使用过图形化界面的SPOON，并且是部署在Windows Server 2008中，所以代码开发、Linux环境运行等问题并不知晓。</p>
+        <p>Kettle是一款ETL工具，Java编写，可实现有关数据的许多操作，全平台支持，可在Java代码中调用也可使用图形化工具调用。2014年使用过几个月，版本是4.x，可能与现在版本差别挺大。只使用过图形化界面的SPOON，并且是部署在Windows Server 2008中。</p>
 <hr>
 <h1 id="使用总结"><a href="#使用总结" class="headerlink" title="使用总结"></a>使用总结</h1><ul>
 <li>在使用”Excel输入”时，Kettle会读取到表格有数据的最后一行，哪怕选择的字段不是最长的列，也会读到最长的列的最后一行，所以在输入时，如果选择的字段不是最长的列，会读取出一些&lt;null&gt;，解决办法是将需要输入的数据单独存在一个表格中，读取这个表格，避免其他列干扰。</li>
@@ -464,7 +476,14 @@
 <li>Kettle设置数据库的几种方式：<ol>
 <li>在转换中设置DB连接；</li>
 <li>在kettle.properties中设置变量，然后在转换中设置DB连接，使用变量，此方法不能将密码设置成变量；</li>
-<li>配置JNDI，在DB连接中使用JNDI方式。配置JNDI需要在安装目录\data-integration\simple-jndi\jdbc.properties中加入jdbc的连接信息，比如下面这个示例：<br> <pre><code><br> ############ MYSQL ############<br> MYSQL/type=javax.sql.DataSource<br> MYSQL/driver=com.mysql.jdbc.Driver<br> MYSQL/url=jdbc:mysql://10.0.0.1:3309/testdb<br> MYSQL/user=test<br> MYSQL/password=test<br> </code></pre></li>
+<li>配置JNDI，在DB连接中使用JNDI方式。配置JNDI需要在安装目录\data-integration\simple-jndi\jdbc.properties中加入jdbc的连接信息，比如下面这个示例： <pre><code>
+ ############ MYSQL ############
+ MYSQL/type=javax.sql.DataSource
+ MYSQL/driver=com.mysql.jdbc.Driver
+ MYSQL/url=jdbc:mysql://127.0.0.1:3309/testdb
+ MYSQL/user=test
+ MYSQL/password=test
+ </code></pre></li>
 </ol>
 </li>
 <li>关于使用Kettle从MySQL取时间数据写入Oracle的问题解决：<ul>
@@ -640,7 +659,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
